@@ -1,0 +1,9 @@
+2019-12-05 13:46:16 INFO  LoginPageTest:23 - com.LearnFramework.LoginPageTest started
+2019-12-05 13:46:22 INFO  LoginPage:49 - Click on SignIn button
+2019-12-05 13:46:24 INFO  LoginPage:54 - Enter Usernametarunpatel71@gmail.com
+2019-12-05 13:46:24 INFO  LoginPage:59 - Enter Usernametarun@123
+2019-12-05 13:46:24 INFO  LoginPage:64 - Enter Username[[ChromeDriver: chrome on XP (30e41dfb09486eafd5619784008e4abb)] -> xpath: .//*[@id='passwd']]
+2019-12-05 13:46:26 INFO  LoginPage:69 - Successmessage is verfiying
+2019-12-05 13:46:26 INFO  GenericHelper:52 - element is displayed..[[ChromeDriver: chrome on XP (30e41dfb09486eafd5619784008e4abb)] -> xpath: .//*[@id='center_column']/p]
+2019-12-05 13:46:26 INFO  LoginPageTest:30 - Login successfull
+2019-12-05 13:46:26 INFO  Signout:32 - Click on Signout button

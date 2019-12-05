@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="14369" started-at="2019-12-05T13:46:13 IST" finished-at="2019-12-05T13:46:27 IST">
+    <groups>
+    </groups>
+    <test name=" Automation Test" duration-ms="14369" started-at="2019-12-05T13:46:13 IST" finished-at="2019-12-05T13:46:27 IST">
+      <class name="com.LearnFramework.LoginPageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce]" name="launchBrowser" is-config="true" duration-ms="3553" started-at="2019-12-05T13:46:13 IST" finished-at="2019-12-05T13:46:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce]" name="setUp" is-config="true" duration-ms="0" started-at="2019-12-05T13:46:16 IST" finished-at="2019-12-05T13:46:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-12-05T13:46:16 IST" finished-at="2019-12-05T13:46:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.LearnFramework.LoginPageTest.testLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce]" name="testLogin" duration-ms="9765" started-at="2019-12-05T13:46:16 IST" finished-at="2019-12-05T13:46:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-05T13:46:26 IST" finished-at="2019-12-05T13:46:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin()[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.LearnFramework.LoginPageTest@647fd8ce]" name="endTest" is-config="true" duration-ms="1010" started-at="2019-12-05T13:46:26 IST" finished-at="2019-12-05T13:46:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.LearnFramework.LoginPageTest -->
+      <class name="com.LearnFramework.SignoutTest">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.LearnFramework.SignoutTest@159f197]" name="getDriver" is-config="true" duration-ms="0" started-at="2019-12-05T13:46:26 IST" finished-at="2019-12-05T13:46:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="FAIL" signature="test_Signout()[pri:0, instance:com.LearnFramework.SignoutTest@159f197]" name="test_Signout" duration-ms="3" started-at="2019-12-05T13:46:26 IST" finished-at="2019-12-05T13:46:26 IST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.LearnFramework.Signout.clicksignout(Signout.java:33)
+at com.LearnFramework.SignoutTest.test_Signout(SignoutTest.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_Signout -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.LearnFramework.SignoutTest@159f197]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-05T13:46:26 IST" finished-at="2019-12-05T13:46:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.LearnFramework.SignoutTest.test_Signout()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.LearnFramework.SignoutTest@159f197]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-05T13:46:26 IST" finished-at="2019-12-05T13:46:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_Signout status=FAILURE method=SignoutTest.test_Signout()[pri:0, instance:com.LearnFramework.SignoutTest@159f197] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.testBase.StartBrowser.getScreenShot(StartBrowser.java:142)
+at com.testBase.StartBrowser.getresult(StartBrowser.java:130)
+at com.testBase.StartBrowser.afterMethod(StartBrowser.java:114)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.LearnFramework.SignoutTest -->
+    </test> <!--  Automation Test -->
+  </suite> <!-- Suite -->
+</testng-results>

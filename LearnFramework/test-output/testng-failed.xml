@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name=" Automation Test(failed)">
+    <classes>
+      <class name="com.LearnFramework.SignoutTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="getDriver"/>
+          <include name="test_Signout"/>
+          <include name="beforeMethod"/>
+          <include name="endTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.LearnFramework.SignoutTest -->
+    </classes>
+  </test> <!--  Automation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
