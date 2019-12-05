@@ -7,13 +7,14 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.testBase.StartBrowser;
 import com.utility.GenericHelper;
 import com.utility.LoggerHelper;
 import com.utility.WaitMethods;
 
 public class LoginPage {
 	
-	WebDriver driver;
+	private WebDriver driver;
 	WaitMethods waitHelper;
 	public Logger log = LoggerHelper.getLogger(LoginPage.class);
 
@@ -37,13 +38,16 @@ public class LoginPage {
 	@CacheLookup
 	WebElement successfullmsg;
 	
+	@FindBy(xpath=".//*[@id='login_form']/h3")
+	WebElement textToverifypage;
+	
 		public LoginPage(WebDriver driver)
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waitHelper = new WaitMethods(driver);
-		//waitHelper.waitForElement(driver, signin, 3000);
-		}
+		//waitHelper.waitForElement(driver, textToverifypage, 30);
+			}
 		
 	public void clickonSignIn() {
 		log.info("Click on SignIn button");
@@ -60,9 +64,10 @@ public class LoginPage {
 		this.password.sendKeys(password);
 		}
 	
-	public void clickonLogin() {
-		log.info("Enter Username"+ password);
-		this.btnlogin.click();
+	public LandingPage clickonLogin() {
+		log.info("click on Login button");
+		btnlogin.click();
+		return new LandingPage(driver);
 	}
 	
 	public boolean verifysuccessmessage() {
@@ -70,17 +75,11 @@ public class LoginPage {
 		 return new GenericHelper().isDisplayed(successfullmsg);
 	}
 	
-	public MyAccountPage loginToApplication(String username, String password) {
+	public void loginToApplication(String username, String password) {
 		clickonSignIn();
 		enterUsername(username);
 		enterPassword(password);
 		clickonLogin();
-		return MyAccountPage(driver);
-		}
-
-	private MyAccountPage MyAccountPage(WebDriver driver2) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	
 }

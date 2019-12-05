@@ -4,13 +4,15 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
+import com.relevantcodes.extentreports.LogStatus;
+import com.testBase.StartBrowser;
+
 public class GenericHelper {
 
 
 	private static final Logger log = LoggerHelper.getLogger(GenericHelper.class);
 		
 		public String readValueFromElement(WebElement element) {
-
 			if (null == element){
 				log.info("weblement is null");
 				return null;
@@ -50,6 +52,7 @@ public class GenericHelper {
 			try {
 				element.isDisplayed();
 				log.info("element is displayed.."+element);
+				StartBrowser.test.log(LogStatus.INFO, "Element is displayed");
 				return true;
 			} catch (Exception e) {
 				log.info(e);
@@ -62,6 +65,7 @@ public class GenericHelper {
 			try {
 				element.isDisplayed();
 				log.info("element is displayed.."+element);
+				StartBrowser.test.log(LogStatus.INFO, "Element is not displayed");
 				return false;
 			} catch (Exception e) {
 				log.error(e);

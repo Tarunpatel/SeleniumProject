@@ -1,9 +1,12 @@
-2019-12-05 13:46:16 INFO  LoginPageTest:23 - com.LearnFramework.LoginPageTest started
-2019-12-05 13:46:22 INFO  LoginPage:49 - Click on SignIn button
-2019-12-05 13:46:24 INFO  LoginPage:54 - Enter Usernametarunpatel71@gmail.com
-2019-12-05 13:46:24 INFO  LoginPage:59 - Enter Usernametarun@123
-2019-12-05 13:46:24 INFO  LoginPage:64 - Enter Username[[ChromeDriver: chrome on XP (30e41dfb09486eafd5619784008e4abb)] -> xpath: .//*[@id='passwd']]
-2019-12-05 13:46:26 INFO  LoginPage:69 - Successmessage is verfiying
-2019-12-05 13:46:26 INFO  GenericHelper:52 - element is displayed..[[ChromeDriver: chrome on XP (30e41dfb09486eafd5619784008e4abb)] -> xpath: .//*[@id='center_column']/p]
-2019-12-05 13:46:26 INFO  LoginPageTest:30 - Login successfull
-2019-12-05 13:46:26 INFO  Signout:32 - Click on Signout button
+2019-12-05 17:52:45 INFO  LoginPageTest:18 - com.LearnFramework.LoginPageTest started
+2019-12-05 17:52:52 INFO  LoginPage:53 - Click on SignIn button
+2019-12-05 17:52:54 INFO  LoginPage:58 - Enter Usernametarunpatel71@gmail.com
+2019-12-05 17:52:54 INFO  LoginPage:63 - Enter Usernametarun@123
+2019-12-05 17:52:54 INFO  LoginPage:68 - click on Login button
+2019-12-05 17:52:57 INFO  LoginPage:74 - Successmessage is verfiying
+2019-12-05 17:52:57 INFO  GenericHelper:54 - element is displayed..[[ChromeDriver: chrome on XP (f4b0b1d9d9881bdde51969f7be9600ae)] -> xpath: .//*[@id='center_column']/p]
+2019-12-05 17:52:57 INFO  LoginPageTest:25 - Login successfull
+2019-12-05 17:52:57 INFO  Signout:34 - Click on Signout button
+2019-12-05 17:52:59 INFO  Signout:39 - Signout is verifying
+2019-12-05 17:52:59 INFO  GenericHelper:54 - element is displayed..[[ChromeDriver: chrome on XP (f4b0b1d9d9881bdde51969f7be9600ae)] -> xpath: .//*[@id='SubmitCreate']]
+2019-12-05 17:52:59 INFO  SignoutTest:21 - Signout Successfull

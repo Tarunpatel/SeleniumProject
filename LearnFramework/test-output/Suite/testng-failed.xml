@@ -6,10 +6,10 @@
       <class name="com.LearnFramework.SignoutTest">
         <methods>
           <include name="launchBrowser"/>
-          <include name="getDriver"/>
           <include name="test_Signout"/>
           <include name="beforeMethod"/>
           <include name="endTest"/>
+          <include name="testLogin"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.LearnFramework.SignoutTest -->

@@ -8,11 +8,10 @@ import org.testng.annotations.Test;
 import com.testBase.StartBrowser;
 import com.utility.LoggerHelper;
 
-public class SignoutTest extends StartBrowser {
+public class SignoutTest extends LoginPageTest {
 	
 	public Logger log = LoggerHelper.getLogger(SignoutTest.class);
 	
-
 	@Test
 	public void test_Signout() {
 		Signout sout = new Signout(driver);

@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 import com.utility.GenericHelper;
@@ -12,11 +13,11 @@ import com.utility.WaitMethods;
 
 public class Signout {
 	
-	WebDriver driver;
+	private WebDriver driver;
 	WaitMethods waitHelper;
 	public Logger log = LoggerHelper.getLogger(Signout.class);
 	
-	@FindBy(xpath=".//*[contains(text(),'Sign out')]")
+	@FindBy(xpath = "//*[contains(text(),'Sign out')]")
 	WebElement signout;
 	
 	@FindBy(xpath=".//*[@id='SubmitCreate']")

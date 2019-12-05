@@ -17,6 +17,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.server.handler.CaptureScreenshot;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -53,7 +54,7 @@ public class StartBrowser {
 		return driver;
 	}
 	
-	@BeforeTest
+	@BeforeClass
 	public void launchBrowser(){
 		try {
 			loadPropertiesFile();
@@ -149,7 +150,9 @@ public String getScreenShot(String imageName) throws IOException{
 	return actualImageName;
 }
 
-@AfterTest(alwaysRun = true)
+
+
+@AfterClass(alwaysRun = true)
 public void endTest() {
 	driver.quit();
 	extent.endTest(test);
