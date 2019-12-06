@@ -3,24 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.LearnFramework.LoginPageTest">
+      <class name="com.LearnFramework.SignoutTest">
         <methods>
           <include name="launchBrowser"/>
+          <include name="test_Signout"/>
           <include name="beforeMethod"/>
           <include name="endTest"/>
-          <include name="testLogin"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.LearnFramework.LoginPageTest -->
-      <class name="com.LearnFramework.LandingpageTest">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="beforeMethod"/>
-          <include name="endTest"/>
-          <include name="LandingTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- com.LearnFramework.LandingpageTest -->
+      </class> <!-- com.LearnFramework.SignoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

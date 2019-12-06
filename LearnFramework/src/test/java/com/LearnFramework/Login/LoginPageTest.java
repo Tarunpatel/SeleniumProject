@@ -1,9 +1,10 @@
-package com.LearnFramework;
+package com.LearnFramework.Login;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.LearnFramework.LoginPage;
 import com.testBase.Config;
 import com.testBase.StartBrowser;
 import com.utility.LoggerHelper;

@@ -49,12 +49,7 @@ public class StartBrowser {
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		extent = new ExtentReports(System.getProperty("user.dir") + "/Reports/" + formater.format(calendar.getTime()) + ".html", false);
 	}
-	
-	public WebDriver getDriver() {
-		return driver;
-	}
-	
-	@BeforeClass
+	@BeforeTest
 	public void launchBrowser(){
 		try {
 			loadPropertiesFile();
@@ -150,9 +145,7 @@ public String getScreenShot(String imageName) throws IOException{
 	return actualImageName;
 }
 
-
-
-@AfterClass(alwaysRun = true)
+@AfterTest(alwaysRun = true)
 public void endTest() {
 	driver.quit();
 	extent.endTest(test);

@@ -9,7 +9,6 @@
           <include name="test_Signout"/>
           <include name="beforeMethod"/>
           <include name="endTest"/>
-          <include name="testLogin"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.LearnFramework.SignoutTest -->

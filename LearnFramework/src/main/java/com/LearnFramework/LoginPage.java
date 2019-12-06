@@ -14,7 +14,7 @@ import com.utility.WaitMethods;
 
 public class LoginPage {
 	
-	private WebDriver driver;
+	WebDriver driver;
 	WaitMethods waitHelper;
 	public Logger log = LoggerHelper.getLogger(LoginPage.class);
 

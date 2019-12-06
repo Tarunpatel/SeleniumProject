@@ -13,7 +13,7 @@ import com.utility.WaitMethods;
 
 public class Signout {
 	
-	private WebDriver driver;
+	static WebDriver driver;
 	WaitMethods waitHelper;
 	public Logger log = LoggerHelper.getLogger(Signout.class);
 	
@@ -33,7 +33,7 @@ public class Signout {
 	public void clicksignout() {
 				log.info("Click on Signout button");
 				signout.click();
-	}
+					}
 	
 	public boolean verifysuccessfullsignout() {
 		log.info("Signout is verifying");
