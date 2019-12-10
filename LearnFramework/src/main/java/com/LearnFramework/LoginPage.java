@@ -45,9 +45,9 @@ public class LoginPage {
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waitHelper = new WaitMethods(driver);
+		/*waitHelper = new WaitMethods(driver);
 		//waitHelper.waitForElement(driver, textToverifypage, 30);
-			}
+*/			}
 		
 	public void clickonSignIn() {
 		log.info("Click on SignIn button");

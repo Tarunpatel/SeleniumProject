@@ -1,6 +1,7 @@
 package com.LearnFramework.ProductCategoryVerify;
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.Test;
 
 import com.LearnFramework.LandingPage;
 import com.LearnFramework.ProductCategoryPage;
@@ -13,6 +14,7 @@ public class VerifyProductAddTOCART extends StartBrowser {
 	ProductCategoryPage pcp = new ProductCategoryPage(driver);
 	LandingPage LP = new LandingPage(driver);
 	
+	@Test
 	public void test_AddProductToCart() {
 		log.info("Click on women menu");
 		LP.clickOnIntem();

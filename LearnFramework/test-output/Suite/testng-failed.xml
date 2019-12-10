@@ -3,15 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name=" Automation Test(failed)">
     <classes>
-      <class name="com.LearnFramework.SignoutTest">
+      <class name="com.LearnFramework.SignOut.SignoutTest">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="test_Signout"/>
           <include name="beforeMethod"/>
-          <include name="endTest"/>
+          <include name="test_Signout"/>
+          <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.LearnFramework.SignoutTest -->
+      </class> <!-- com.LearnFramework.SignOut.SignoutTest -->
     </classes>
   </test> <!--  Automation Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -11,7 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.utility.DropDownHelper;
 import com.utility.LoggerHelper;
+import com.utility.VerificationHelper;
 import com.utility.WaitMethods;
 
 public class ProductCategoryPage {
@@ -44,8 +46,8 @@ public class ProductCategoryPage {
 	public ProductCategoryPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waitHelper = new WaitMethods(driver);
-		waitHelper.waitForElement(driver, catalogTextObj,3000);
+		/*waitHelper = new WaitMethods(driver);
+		waitHelper.waitForElement(driver, catalogTextObj,3000);*/
 	}
 	
 	public void mouseOverOnProduct(int number) {
@@ -61,6 +63,10 @@ public class ProductCategoryPage {
 		addtoCart.click();
 	}
 	
+	public boolean verifyPoductAddedSuccesfully(){
+		return VerificationHelper.verifyElementPresent(productaddedsuccessfully);
+	}
+	
 	public void clickonProceedToCheckout() {
 		log.info("Click on Proceed To CheckOut" + processTocheckout.getText());
 		processTocheckout.click();
@@ -69,12 +75,30 @@ public class ProductCategoryPage {
 	public void colorSelection() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;  
 		js.executeScript("window.scrollby(0,1000)");
-		
-		
+		driver.findElement(By.xpath("//a[contains(text(),'Orange')]/parent::*/preceding-sibling::input[1]")).click();
+		try {
+			Thread.sleep(7000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
-	
-	
-	
-
+	public void selectsize() {
+		log.info("Select size......");
+		try {
+			boolean selected = driver.findElement(By.xpath(".//*[@id='ul_layered_id_attribute_group_1']/li[2]/label/a/span")).isSelected();
+			if(selected == false) {
+			driver.findElement(By.xpath(".//*[@id='ul_layered_id_attribute_group_1']/li[2]/label/a/span")).click();
+			log.info("checkbox is checked..");
+		}else {
+			System.out.println("Problem in selecting size");
+		}
+		}catch(Exception e) {
+			log.info("checkbox was already checked..");
+		}
+}
+	public void selectsort() {
+		DropDownHelper dropdown_sort = new DropDownHelper(driver);
+		dropdown_sort.SelectUsingVisibleText(sortBy, "Price: Lowest first");
+	}
 }

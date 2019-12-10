@@ -26,9 +26,9 @@ public class Signout {
 	public Signout(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waitHelper = new WaitMethods(driver);
+		/*waitHelper = new WaitMethods(driver);
 		//waitHelper.waitForElement(driver, signout, 3000);
-	}
+*/	}
 	
 	public void clicksignout() {
 				log.info("Click on Signout button");

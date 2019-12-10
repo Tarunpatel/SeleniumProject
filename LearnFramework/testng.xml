@@ -3,10 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name=" Automation Test">
     <classes>
-      <!--   <class name="com.LearnFramework.LandingPage.LandingpageTest"/> -->
-      <class name="com.LearnFramework.Login.LoginPageTest"/>
-      <class name="com.LearnFramework.SignOut.SignoutTest"/>
-      <class name="com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART"/>
+       		 	<class name="com.LearnFramework.Login.LoginPageTest"/>
+				<class name="com.LearnFramework.SignOut.SignoutTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

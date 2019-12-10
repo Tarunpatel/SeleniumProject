@@ -49,6 +49,7 @@ public class StartBrowser {
 		SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
 		extent = new ExtentReports(System.getProperty("user.dir") + "/Reports/" + formater.format(calendar.getTime()) + ".html", false);
 	}
+	
 	@BeforeTest
 	public void launchBrowser(){
 		try {

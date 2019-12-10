@@ -2,7 +2,9 @@ package com.utility;
 
 	import java.util.List;
 	import java.util.concurrent.TimeUnit;
-	import org.openqa.selenium.By;
+
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,9 +13,22 @@ package com.utility;
 	public class WaitMethods {
 
 		WebDriver driver;
+		private Logger log = LoggerHelper.getLogger(WaitMethods.class);
+
 
 		public WaitMethods(WebDriver driver) {
 			this.driver = driver;
+		}
+		
+		public void setImplicitWait(long timeout, TimeUnit unit) {
+			log.info("Implicit Wait has been set to: " + timeout);
+			driver.manage().timeouts().implicitlyWait(timeout, unit);
+		}
+		
+		public void pageLoadTime(long timeout, TimeUnit unit){
+			log.info("waiting for page to load for : "+ unit+ " seconds");
+			driver.manage().timeouts().pageLoadTimeout(timeout, unit);
+			log.info("page is loaded");
 		}
 
 		public void waitForVisibilityOfElement(WebElement element, int time) {

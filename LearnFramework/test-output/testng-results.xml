@@ -1,68 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="4" passed="1">
+<testng-results skipped="0" failed="1" ignored="3" total="5" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[java.lang.NullPointerException]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="14067" started-at="2019-12-06T18:28:07 IST" finished-at="2019-12-06T18:28:21 IST">
+  <suite name="Suite" duration-ms="16380" started-at="2019-12-10T11:27:20 IST" finished-at="2019-12-10T11:27:36 IST">
     <groups>
     </groups>
-    <test name=" Automation Test" duration-ms="14067" started-at="2019-12-06T18:28:07 IST" finished-at="2019-12-06T18:28:21 IST">
-      <class name="com.LearnFramework.LoginPageTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.LearnFramework.LoginPageTest@6580cfdd]" name="launchBrowser" is-config="true" duration-ms="3562" started-at="2019-12-06T18:28:07 IST" finished-at="2019-12-06T18:28:11 IST">
+    <test name=" Automation Test" duration-ms="16380" started-at="2019-12-10T11:27:20 IST" finished-at="2019-12-10T11:27:36 IST">
+      <class name="com.LearnFramework.Login.LoginPageTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.LearnFramework.Login.LoginPageTest@55a1c291]" name="beforeSuite" is-config="true" duration-ms="111" started-at="2019-12-10T11:27:20 IST" finished-at="2019-12-10T11:27:20 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.LearnFramework.LoginPageTest@6580cfdd]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2019-12-06T18:28:11 IST" finished-at="2019-12-06T18:28:11 IST">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.LearnFramework.Login.LoginPageTest@55a1c291]" name="beforeTest" is-config="true" duration-ms="3876" started-at="2019-12-10T11:27:20 IST" finished-at="2019-12-10T11:27:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.LearnFramework.Login.LoginPageTest@55a1c291]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2019-12-10T11:27:24 IST" finished-at="2019-12-10T11:27:24 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.LearnFramework.LoginPageTest.testLogin()]]>
+                <![CDATA[public void com.LearnFramework.Login.LoginPageTest.testLogin()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.LearnFramework.LoginPageTest@6580cfdd]" name="testLogin" duration-ms="9436" started-at="2019-12-06T18:28:11 IST" finished-at="2019-12-06T18:28:20 IST">
+        <test-method status="PASS" signature="testLogin()[pri:1, instance:com.LearnFramework.Login.LoginPageTest@55a1c291]" name="testLogin" duration-ms="11140" started-at="2019-12-10T11:27:24 IST" finished-at="2019-12-10T11:27:35 IST">
           <reporter-output>
+            <line>
+              <![CDATA[java.lang.NullPointerException]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.LearnFramework.LoginPageTest@6580cfdd]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-06T18:28:20 IST" finished-at="2019-12-06T18:28:20 IST">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.LearnFramework.Login.LoginPageTest@55a1c291]" name="afterMethod" is-config="true" duration-ms="410" started-at="2019-12-10T11:27:35 IST" finished-at="2019-12-10T11:27:35 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin()[pri:0, instance:com.LearnFramework.LoginPageTest@6580cfdd] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginPageTest.testLogin()[pri:1, instance:com.LearnFramework.Login.LoginPageTest@55a1c291] output=java.lang.NullPointerException]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.LearnFramework.LoginPageTest@6580cfdd]" name="endTest" is-config="true" duration-ms="1030" started-at="2019-12-06T18:28:20 IST" finished-at="2019-12-06T18:28:21 IST">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.LearnFramework.Login.LoginPageTest@55a1c291]" name="afterTest" is-config="true" duration-ms="821" started-at="2019-12-10T11:27:35 IST" finished-at="2019-12-10T11:27:36 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.LearnFramework.LoginPageTest -->
-      <class name="com.LearnFramework.SignoutTest">
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.LearnFramework.SignoutTest@7e0b85f9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2019-12-06T18:28:20 IST" finished-at="2019-12-06T18:28:20 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.LearnFramework.SignoutTest.test_Signout()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="test_Signout()[pri:0, instance:com.LearnFramework.SignoutTest@7e0b85f9]" name="test_Signout" duration-ms="1" started-at="2019-12-06T18:28:20 IST" finished-at="2019-12-06T18:28:20 IST">
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.LearnFramework.Login.LoginPageTest -->
+      <class name="com.LearnFramework.SignOut.SignoutTest">
+        <test-method status="FAIL" signature="test_Signout()[pri:2, instance:com.LearnFramework.SignOut.SignoutTest@2145433b]" name="test_Signout" duration-ms="2" started-at="2019-12-10T11:27:35 IST" finished-at="2019-12-10T11:27:35 IST">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy11.click(Unknown Source)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
 at com.LearnFramework.Signout.clicksignout(Signout.java:35)
-at com.LearnFramework.SignoutTest.test_Signout(SignoutTest.java:22)
+at com.LearnFramework.SignOut.SignoutTest.test_Signout(SignoutTest.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -97,60 +96,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_Signout -->
-        <test-method status="FAIL" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.LearnFramework.SignoutTest@7e0b85f9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2019-12-06T18:28:20 IST" finished-at="2019-12-06T18:28:20 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.LearnFramework.SignOut.SignoutTest@2145433b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-12-10T11:27:35 IST" finished-at="2019-12-10T11:27:35 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test_Signout status=FAILURE method=SignoutTest.test_Signout()[pri:0, instance:com.LearnFramework.SignoutTest@7e0b85f9] output={null}]]]>
+                <![CDATA[public void com.LearnFramework.SignOut.SignoutTest.test_Signout()]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.testBase.StartBrowser.getScreenShot(StartBrowser.java:138)
-at com.testBase.StartBrowser.getresult(StartBrowser.java:126)
-at com.testBase.StartBrowser.afterMethod(StartBrowser.java:110)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.LearnFramework.SignOut.SignoutTest@2145433b]" name="afterMethod" is-config="true" duration-ms="59" started-at="2019-12-10T11:27:35 IST" finished-at="2019-12-10T11:27:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=test_Signout status=FAILURE method=SignoutTest.test_Signout()[pri:2, instance:com.LearnFramework.SignOut.SignoutTest@2145433b] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.LearnFramework.SignoutTest -->
+      </class> <!-- com.LearnFramework.SignOut.SignoutTest -->
     </test> <!--  Automation Test -->
   </suite> <!-- Suite -->
 </testng-results>
