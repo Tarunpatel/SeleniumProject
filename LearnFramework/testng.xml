@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name=" Automation Test">
+<suite name="All Test">
+<!--   <test thread-count="5" name=" LoginTest">
     <classes>
        		 	<class name="com.LearnFramework.Login.LoginPageTest"/>
-				<class name="com.LearnFramework.SignOut.SignoutTest"/>
+       		    </classes>
+    </test> -->
+    <test name="Add To Cart">
+     <classes>
+       		 	<class name="com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART"/>
     </classes>
-  </test> <!-- Test -->
+    </test>
 </suite> <!-- Suite -->

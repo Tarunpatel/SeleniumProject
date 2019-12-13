@@ -46,16 +46,18 @@ public class ProductCategoryPage {
 	public ProductCategoryPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		/*waitHelper = new WaitMethods(driver);
-		waitHelper.waitForElement(driver, catalogTextObj,3000);*/
+		waitHelper = new WaitMethods(driver);
+		waitHelper.waitForElement(driver, catalogTextObj,3000);
 	}
 	
 	public void mouseOverOnProduct(int number) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;  
+		js.executeScript("window.scrollTo(0,300)");
 		String fxpath = ".//*[@id='center_column']/ul/li[";
 		String sxpath = "]/div/div[2]/div[2]/a[1]/span";
 		log.info("Mouse Hover"+number+"..On Product");
 		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(By.xpath(fxpath+number+sxpath))).build().perform();
+		action.moveToElement(driver.findElement(By.xpath(".//*[@id='center_column']/ul/li/div/div[1]/div/a[1]/img"))).build().perform();
 	}
 	
 	public void clickonAddToCart() {

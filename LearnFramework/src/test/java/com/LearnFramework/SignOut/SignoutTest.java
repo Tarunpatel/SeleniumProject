@@ -15,13 +15,11 @@ import com.utility.LoggerHelper;
 public class SignoutTest extends StartBrowser1 {
 	
 	public Logger log = LoggerHelper.getLogger(SignoutTest.class);
-	Signout sout = new Signout(driver);
 	
-	@Test(priority=2)
-	public void test_Signout() {
-		/*Config config = new Config(OR);
-		driver.get(config.getWebsite());*/
-		
+	
+	@Test()
+	public void test_Signout() throws Exception {
+		Signout sout = new Signout(driver);
 		sout.clicksignout();
 		boolean status  = sout.verifysuccessfullsignout();
 		if(status == true) {

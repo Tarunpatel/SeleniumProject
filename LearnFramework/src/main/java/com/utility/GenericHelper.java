@@ -52,7 +52,7 @@ public class GenericHelper {
 			try {
 				element.isDisplayed();
 				log.info("element is displayed.."+element);
-				StartBrowser.test.log(LogStatus.INFO, "Element is displayed");
+				
 				return true;
 			} catch (Exception e) {
 				log.info(e);
@@ -65,7 +65,7 @@ public class GenericHelper {
 			try {
 				element.isDisplayed();
 				log.info("element is displayed.."+element);
-				StartBrowser.test.log(LogStatus.INFO, "Element is not displayed");
+			
 				return false;
 			} catch (Exception e) {
 				log.error(e);

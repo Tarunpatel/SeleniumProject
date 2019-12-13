@@ -8,19 +8,48 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0"> Automation Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,380</td><td></td><td></td></tr>
+<tr><th colspan="7">All Test</th></tr>
+<tr><td><a href="#t0">Add To Cart</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">65,446</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4"> Automation Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.LearnFramework.SignOut.SignoutTest</td><td><a href="#m0">test_Signout</a></td><td rowspan="1">1575957455886</td><td rowspan="1">2</td></tr><tr><th colspan="4"> Automation Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.LearnFramework.Login.LoginPageTest</td><td><a href="#m1">testLogin</a></td><td rowspan="1">1575957444331</td><td rowspan="1">11140</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Add To Cart &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1576226879346</td><td rowspan="1">23</td></tr><tr><th colspan="4">Add To Cart &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART</td><td><a href="#m1">test_AddProductToCart</a></td><td rowspan="1">1576226833274</td><td rowspan="1">46064</td></tr><tr><th colspan="4">Add To Cart &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART</td><td><a href="#m2">testLogin</a></td><td rowspan="1">1576226819619</td><td rowspan="1">13271</td></tr></tbody>
 </table>
-<h2> Automation Test</h2><h3 id="m0">com.LearnFramework.SignOut.SignoutTest#test_Signout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.LearnFramework.Signout.clicksignout(Signout.java:35)
-	at com.LearnFramework.SignOut.SignoutTest.test_Signout(SignoutTest.java:25)
+<h2>Add To Cart</h2><h3 id="m0">com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART#afterMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=test_AddProductToCart status=FAILURE method=VerifyProductAddTOCART.test_AddProductToCart()[pri:2, instance:com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART@2b4a2ec7] output={null}]</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">captureScreen method called</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=78.0.3904.108)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;PIL-PC-1048&apos;, ip: &apos;10.6.12.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\PC-2\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 78.0.3904.108, webStorageEnabled: true}
+Session ID: dae31a695dc6734127700364359eee5e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:294)
+	at com.testBase.StartBrowser1.captureScreen(StartBrowser1.java:137)
+	at com.testBase.StartBrowser1.afterMethod(StartBrowser1.java:70)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.LearnFramework.Login.LoginPageTest#testLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">java.lang.NullPointerException</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART#test_AddProductToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.utility.WaitMethods.waitForElement(WaitMethods.java:72)
+	at com.LearnFramework.ProductCategoryPage.&lt;init&gt;(ProductCategoryPage.java:50)
+	at com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART.test_AddProductToCart(VerifyProductAddTOCART.java:33)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.LearnFramework.ProductCategoryVerify.VerifyProductAddTOCART#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.testBase.StartBrowser;
+import com.testBase.StartBrowser1;
 import com.utility.GenericHelper;
 import com.utility.LoggerHelper;
 import com.utility.WaitMethods;
@@ -23,19 +24,15 @@ public class LoginPage {
 	WebElement signin;
 	
 	@FindBy(xpath=".//*[@id='email']")
-	@CacheLookup
 	WebElement username;
 	
 	@FindBy(xpath=".//*[@id='passwd']")
-	@CacheLookup
 	WebElement password;
 	
 	@FindBy(xpath=".//*[@id='SubmitLogin']")
-	@CacheLookup
 	WebElement btnlogin;
 	
 	@FindBy(xpath=".//*[@id='center_column']/p")
-	@CacheLookup
 	WebElement successfullmsg;
 	
 	@FindBy(xpath=".//*[@id='login_form']/h3")
@@ -45,6 +42,7 @@ public class LoginPage {
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		StartBrowser1 testbase = new StartBrowser1();
 		/*waitHelper = new WaitMethods(driver);
 		//waitHelper.waitForElement(driver, textToverifypage, 30);
 */			}
@@ -72,7 +70,9 @@ public class LoginPage {
 	
 	public boolean verifysuccessmessage() {
 		log.info("Successmessage is verfiying");
-		 return new GenericHelper().isDisplayed(successfullmsg);
+		GenericHelper GH = new GenericHelper();
+		boolean verify_msg = GH.isDisplayed(successfullmsg);
+		 return verify_msg;
 	}
 	
 	public void loginToApplication(String username, String password) {

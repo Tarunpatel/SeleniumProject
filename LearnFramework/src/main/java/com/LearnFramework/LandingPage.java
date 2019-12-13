@@ -32,8 +32,8 @@ public class LandingPage {
 		public LandingPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		/*waitHelper = new WaitMethods(driver);
-		waitHelper.waitForElement(driver, womenMenu, 3000);*/
+		waitHelper = new WaitMethods(driver);
+		waitHelper.waitForElement(driver, womenMenu, 3000);
 	}
 	
 	public void mouseOver(){
@@ -44,7 +44,7 @@ public class LandingPage {
 		
 	public ProductCategoryPage clickOnIntem(){
 		log.info("clickin on :"+ "T-Shirt");
-		driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/a")).click();
+		driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a")).click();
 		return new ProductCategoryPage(driver);
 	}
 	
