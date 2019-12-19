@@ -25,10 +25,9 @@ public class VerifyProductAddTOCART extends StartBrowser1 {
 		loginpage.loginToApplication("tarunpatel71@gmail.com", "tarun@123");
 		boolean status = loginpage.verifysuccessmessage();
 	Assert.assertEquals(status, true);
-	
-}	
+	}	
 	@Test(priority=2)
-	public void test_AddProductToCart() {
+	public void test_AddProductToCart() throws Exception {
 		log.info("Click on women menu");
 		ProductCategoryPage pcp = new ProductCategoryPage(driver);
 		LandingPage LP = new LandingPage(driver);

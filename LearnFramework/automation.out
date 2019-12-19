@@ -1,15 +1,21 @@
-2019-12-13 15:50:50 INFO  StartBrowser1:118 - Initialize Web driver: 790229674
-2019-12-13 15:50:50 INFO  WaitMethods:24 - Implicit Wait has been set to: 120
-2019-12-13 15:50:50 INFO  WaitMethods:29 - waiting for page to load for : SECONDS seconds
-2019-12-13 15:50:50 INFO  WaitMethods:31 - page is loaded
-2019-12-13 15:50:51 INFO  StartBrowser1:63 - **************testLoginStarted***************
-2019-12-13 15:50:51 INFO  VerifyProductAddTOCART:22 - com.LearnFramework.Login.LoginPageTest started
-2019-12-13 15:50:58 INFO  LoginPage:51 - Click on SignIn button
-2019-12-13 15:51:06 INFO  LoginPage:56 - Enter Usernametarunpatel71@gmail.com
-2019-12-13 15:51:07 INFO  LoginPage:61 - Enter Usernametarun@123
-2019-12-13 15:51:08 INFO  LoginPage:66 - click on Login button
-2019-12-13 15:51:12 INFO  LoginPage:72 - Successmessage is verfiying
-2019-12-13 15:51:13 INFO  GenericHelper:54 - element is displayed..[[ChromeDriver: chrome on XP (437691cb8a34bcf6ac555f681a845ee0)] -> xpath: .//*[@id='center_column']/p]
-2019-12-13 15:51:26 INFO  StartBrowser1:81 - **************testLoginFinished***************
-2019-12-13 15:52:13 INFO  StartBrowser1:63 - **************test_AddProductToCartStarted***************
-2019-12-13 15:52:13 INFO  VerifyProductAddTOCART:32 - Click on women menu
+2019-12-16 19:46:49 INFO  StartBrowser1:118 - Initialize Web driver: 1863953433
+2019-12-16 19:46:49 INFO  WaitMethods:24 - Implicit Wait has been set to: 120
+2019-12-16 19:46:49 INFO  WaitMethods:29 - waiting for page to load for : SECONDS seconds
+2019-12-16 19:46:49 INFO  WaitMethods:31 - page is loaded
+2019-12-16 19:46:50 INFO  StartBrowser1:63 - **************testLoginStarted***************
+2019-12-16 19:46:50 INFO  VerifyProductAddTOCART:22 - com.LearnFramework.Login.LoginPageTest started
+2019-12-16 19:46:57 INFO  LoginPage:51 - Click on SignIn button
+2019-12-16 19:46:59 INFO  LoginPage:56 - Enter Usernametarunpatel71@gmail.com
+2019-12-16 19:46:59 INFO  LoginPage:61 - Enter Usernametarun@123
+2019-12-16 19:46:59 INFO  LoginPage:66 - click on Login button
+2019-12-16 19:47:01 INFO  LoginPage:72 - Successmessage is verfiying
+2019-12-16 19:47:01 INFO  GenericHelper:54 - element is displayed..[[ChromeDriver: chrome on XP (3eeac7d7c2cd9791efc3e3b2cf8cf5da)] -> xpath: .//*[@id='center_column']/p]
+2019-12-16 19:47:01 INFO  StartBrowser1:81 - **************testLoginFinished***************
+2019-12-16 19:47:01 INFO  StartBrowser1:63 - **************test_AddProductToCartStarted***************
+2019-12-16 19:47:01 INFO  VerifyProductAddTOCART:31 - Click on women menu
+2019-12-16 19:47:02 INFO  LandingPage:40 - doing mouse over on :Women's Tab
+2019-12-16 19:47:02 INFO  LandingPage:46 - clickin on :T-Shirt
+2019-12-16 19:47:05 INFO  ProductCategoryPage:59 - Mouse Hover1..On Product
+2019-12-16 19:47:05 INFO  ProductCategoryPage:66 - Click on AddToCart button
+2019-12-16 19:47:08 INFO  ProductCategoryPage:77 - Click on Proceed To CheckOut
+2019-12-16 19:47:13 INFO  StartBrowser1:81 - **************test_AddProductToCartFinished***************

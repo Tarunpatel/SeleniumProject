@@ -44,7 +44,10 @@ public class LandingPage {
 		
 	public ProductCategoryPage clickOnIntem(){
 		log.info("clickin on :"+ "T-Shirt");
-		driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a")).click();
+		WebElement tshirt = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a"));
+		waitHelper.implicitWaitForSeconds(30000);
+		waitHelper.waitForElementToBeClickable(tshirt, 30000);
+		tshirt.click();
 		return new ProductCategoryPage(driver);
 	}
 	

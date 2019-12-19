@@ -29,6 +29,6 @@ public class LoginPageTest extends StartBrowser1{
 			loginpage.loginToApplication("tarunpatel71@gmail.com", "tarun@123");
 			boolean status = loginpage.verifysuccessmessage();
 			Assert.assertEquals(status, true);
-		
-	}	
+			}
+	
 }
